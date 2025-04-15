@@ -30,7 +30,7 @@ public class ProductController {
 	@PostMapping
 	public Product createProduct(@RequestBody Product prod) {
 		return prodService.createProduct(prod);
-	}
+	}	
 	
 	@GetMapping("/{pId}")
 	public ResponseEntity<Product> getProductById(@PathVariable("pId") int pId){
